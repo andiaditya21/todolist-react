@@ -20,9 +20,9 @@ const Todos = () => {
     return (
         <section className="todos">
             {
-                todos.map((todo) => {
+                todos.map((todo, index) => {
                     return (
-                        <Todo text={todo.text}/>
+                        <Todo key={index} text={todo.text}/>
                     )
                 })
             }

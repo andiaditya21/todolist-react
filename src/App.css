@@ -90,8 +90,8 @@ body, html {
   border-bottom: 1px solid var(--main-red-color);
   padding: 0 24px;
   flex: 1;
-  font-family: "Open Sans", sans-serif;
-  text-transform: lowercase;
+  font-family: "Nerko", sans-serif;
+  /* text-transform: lowercase; */
 }
 
 .add-btn {

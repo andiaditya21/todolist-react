@@ -12,5 +12,5 @@ const Todo = (props) => {
 export default Todo
 
 Todo.propTypes = {
-    text: PropTypes.string
+    text: PropTypes.string.isRequired
 }
