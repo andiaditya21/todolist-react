@@ -47,6 +47,7 @@ body, html {
 
 .header {
   display: flex;
+  align-items: flex-start;
 }
 
 .header-title {
@@ -62,8 +63,39 @@ body, html {
   background: unset;
   border: unset;
   outline: unset;
-  padding: 12px;
   font-size: 1.3rem;
-  font-family: "Open Sans";
+  padding: 16px;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  cursor: pointer;
+}
+
+.add {
+  padding: 16px;
+}
+
+.add-form {
+  display: flex;
+  align-items: flex-start;
+}
+
+.add-input {
+  background: unset;
+  border: unset;
+  outline: unset;
+
+  border-bottom: 1px solid var(--main-red-color);
+  padding: 0 24px;
+  flex: 1;
+  font-family: "Open Sans", sans-serif;
+  text-transform: lowercase;
+}
+
+.add-btn {
+  background: unset;
+  border: unset;
+  outline: unset;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  margin-left: 10px;
 }
