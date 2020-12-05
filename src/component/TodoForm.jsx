@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import PropTypes from 'prop-types'
 
-
+// function comp menerima props.addTodo
 const TodoForm = ({addTodo}) => {
     // react HOOKS, initialisasi -> value, set initialisasi -> setValue
     const [value, setValue] = useState("");

@@ -1,22 +1,10 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import Todo from './Todo'
 
-const Todos = () => {
-    const todos = [
-        {
-            text: "Belajar JS"
-        },
-        {
-            text: "Belajar ReactJS"
-        },
-        {
-            text: "Belajar React Native"
-        },
-        {
-            text: "Belajar Flutter"
-        },
-
-    ]
+const Todos = ({ todos }) => {
+    
     return (
         <section className="todos">
             {
@@ -28,6 +16,13 @@ const Todos = () => {
             }
         </section>
     )
+}
+
+Todos.propTypes = {
+    // props todos berisikan sebuah array of object yang diketahui bentuknya (shape) adalah sebuah text yang bertipe string. 
+    todos: PropTypes.arrayOf(PropTypes.shape({
+        text: PropTypes.string
+    }))
 }
 
 export default Todos
