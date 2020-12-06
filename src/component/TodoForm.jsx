@@ -20,7 +20,6 @@ const TodoForm = ({addTodo}) => {
         alert(value);
         setValue("")
     }
-    console.log("value:", value)
 
     return (
         <section className="add">
