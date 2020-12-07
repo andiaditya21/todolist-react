@@ -40,8 +40,10 @@ const TodoList = () => {
     }
 
     // function untuk delete todo list
+    // USE CASE -> Ketika btn Add diaktifkan, maka btn clear tidak bisa dijalankan. Sebaliknya, jika btn Add nonaktif, maka btn clear bisa digunakan
+    // default showAdd adalah false. Menggunakan If conditional, jika negasi dari showAdd bernilai true (Inisialisasi awal showAdd = false, berarti inisialisasi awal untuk conditional ini adalah true), maka akan menjalankan setTodos menjadi array kosong. Kebalikannya, kalo showAdd bernilai false, maka tidak akan melakukan apa2
     const clearTodo = () => {
-        setTodos([])
+        !showAdd && setTodos([])
     }
 
     // function khusus ketika todo ada yang complete berdasarkan index masing-masing todo
