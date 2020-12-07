@@ -24,7 +24,7 @@ const TodoForm = ({addTodo, showAdd}) => {
         // function ini berasal dari file lain
         addTodo(value)
 
-        alert(value);
+        // alert(value);
         setValue("")
     }
 
