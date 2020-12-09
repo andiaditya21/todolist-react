@@ -1,0 +1,37 @@
+  /* Pakai camelCase kalo pake module.css*/
+  
+  .mainRedColor {
+    color: var(--main-red-color);
+  }
+  
+  .mainBlackColor {
+    color: var(--main-black-color);
+  }
+
+  .headerBtn {
+    background: unset;
+    border: unset;
+    outline: unset;
+    font-size: 1.3rem;
+    padding: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    width: 24%;
+  }
+
+  .alignLeft {
+    text-align: left;
+  }
+  
+  .alignRight {
+    text-align: right;
+  }
+
+  .headerBtn.mainRedColor:active {
+    text-shadow: 1px 1px 2px var(--main-red-color);
+  }
+  
+  .headerBtn.mainBlackColor:active {
+    text-shadow: 1px 1px 2px var(--main-black-color);
+  }

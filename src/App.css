@@ -27,9 +27,6 @@ body, html {
   --main-black-color: #484848;
 }
 
-.main-red-color {
-  color: var(--main-red-color);
-}
 
 .container {
   width: 400px;
@@ -61,26 +58,6 @@ body, html {
   font-size: 1.5rem;
   text-transform: lowercase;
   align-self: center;
-}
-
-.header-btn {
-  background: unset;
-  border: unset;
-  outline: unset;
-  font-size: 1.3rem;
-  padding: 16px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  cursor: pointer;
-  width: 24%;
-}
-
-.align-left {
-  text-align: left;
-}
-
-.align-right {
-  text-align: right;
 }
 
 .add {
@@ -115,13 +92,6 @@ body, html {
   cursor: pointer;
 }
 
-.header-btn.main-red-color:active {
-  text-shadow: 1px 1px 2px var(--main-red-color);
-}
-
-.header-btn.main-black-color:active {
-  text-shadow: 1px 1px 2px var(--main-black-color);
-}
 
 .add-btn.main-black-color:active {
   text-shadow: 1px 1px 2px var(--main-black-color);
