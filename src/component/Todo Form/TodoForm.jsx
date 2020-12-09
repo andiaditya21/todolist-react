@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import PropTypes from 'prop-types'
+import styles from './TodoForm.module.css'
+import cx from 'classnames'
 
 // function comp menerima props.addTodo
 const TodoForm = ({addTodo, showAdd}) => {
@@ -30,11 +32,11 @@ const TodoForm = ({addTodo, showAdd}) => {
 
     return (
             showAdd ? 
-                (<section className="add">
-                    <form action="" className="add-form" onSubmit={handleFormSubmit}>
+                (<section className={styles.add}>
+                    <form action="" className={styles.addForm} onSubmit={handleFormSubmit}>
                         {/* function onChange untuk mencuplik input text dari user dan memasukkannya kedalam setValue kemudian mengganti nilai dari value. atribute value memiliki nilai awal / nilai terupdate dari value hooks  */}
-                        <input type="text" className="add-input" value={value} onChange={(e)=>{setValue(e.target.value)}}/>   
-                        <button className="add-btn main-black-color">Add</button>
+                        <input type="text" className={styles.addInput} value={value} onChange={(e)=>{setValue(e.target.value)}}/>   
+                        <button className={cx(styles.addBtn, styles.mainBlackColor)}>Add</button>
                     </form>
                 </section>)
              : null

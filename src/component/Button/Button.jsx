@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './Button.module.css'
+// gunakan library ini jika memiliki > 2 styling
 import cx from 'classnames'
 
 // props.color akan memuat data main-black/red-color, props.align akan memuat data text-left/text-right
