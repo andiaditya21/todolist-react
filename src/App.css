@@ -44,22 +44,6 @@ body, html {
   justify-content: space-between;
 }
 
-.header {
-  display: flex;
-  align-items: flex-start;
-}
-
-.header-title {
-  color: var(--main-black-color);
-  /* flex: 1; */
-  width: 52%;
-  font-family: "Nerko one", sans-serif;
-  text-align: center;
-  font-size: 1.5rem;
-  text-transform: lowercase;
-  align-self: center;
-}
-
 .add {
   padding: 16px;
 }

@@ -22,8 +22,8 @@ const Button = ({ text, onClick, color, align }) => {
         // dynamic classNames menggunakan computed keys
         [styles.mainRedColor] : color === "red",
         [styles.mainBlackColor] : color === "black",
-        [styles.alignLeft] : color === "left",
-        [styles.alignRight] : color === "right" 
+        [styles.alignLeft] : align === "left",
+        [styles.alignRight] : align === "right" 
     })
 
 

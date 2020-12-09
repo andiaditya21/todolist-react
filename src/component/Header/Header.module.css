@@ -1,0 +1,17 @@
+
+.header {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .headerTitle {
+    color: var(--main-black-color);
+    /* flex: 1; */
+    width: 52%;
+    font-family: "Nerko one", sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: lowercase;
+    align-self: center;
+  }
+  
