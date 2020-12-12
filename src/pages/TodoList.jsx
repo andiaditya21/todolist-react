@@ -1,4 +1,6 @@
-import React, { useState} from 'react'
+import React, { useState } from 'react'
+
+import UseStateWithLocalStorage from '../component/Hooks/UseStateWithLocalStorage'
 
 import Header from '../component/Header/Header'
 import Paper from '../component/Paper/Paper'
@@ -6,12 +8,14 @@ import TodoForm from '../component/Todo Form/TodoForm'
 import Todos from '../component/Todos/Todos'
 
 const TodoList = () => {
-    const [todos, setTodos] = useState([
-        {text: "Belajar JS", isCompleted: false},
-        {text: "Belajar React JS", isCompleted: false},
-        {text: "Belajar React Native", isCompleted: false},
-        {text: "Belajar Flutter", isCompleted: false},
-    ])
+    // const [todos, setTodos] = useState([
+    //     {text: "Belajar JS", isCompleted: false},
+    //     {text: "Belajar React JS", isCompleted: false},
+    //     {text: "Belajar React Native", isCompleted: false},
+    //     {text: "Belajar Flutter", isCompleted: false},
+    // ])
+
+    const [todos, setTodos] = UseStateWithLocalStorage("todos")
 
     // showAdd Toggle. nilai default adalah false (karena di hidden dulu). nanti showAdd = true baru munculkan
     const [showAdd, setShowAdd] = useState(false)
