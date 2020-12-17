@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './Todos.module.css'
 
+import { Link } from 'react-router-dom'
+
 import Todo from '../Todo/Todo'
 
 const Todos = ({ todos, completeTodo }) => {
@@ -18,9 +20,12 @@ const Todos = ({ todos, completeTodo }) => {
             }
             {
                 todos.length === 0 &&
-                    <div className={styles.todoPlaceholderText}>
-                        Add todo by clicking Add button in top left corner
-                    </div>
+                    <>
+                        <div className={styles.todoPlaceholderText}>
+                            Add todo by clicking Add button in top left corner
+                        </div>
+                        <Link to="/about">Go to About Page</Link>
+                    </>
             }
         </section>
     )
